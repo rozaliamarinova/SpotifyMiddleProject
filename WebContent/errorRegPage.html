@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Registration</title>
+
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-size:100%;
+            background-image:url(beyonce.jpg);
+            font-family: Calibri, sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            height: 500px;
+            text-align:center;
+            background-color: rgba(1, 1, 1, 0.80);
+            margin: 0 auto;
+            margin-top: 125px;
+        }
+
+        input {
+            height: 40px;
+            width: 250px;
+            font-size: 18px;
+            margin-bottom: -35px;
+            background-color: rgba(128,128,128,0.55);
+            padding-left: 30px;
+            border-style: inherit;
+            border-radius: 5px;
+            margin-left:30px;
+            border: 1px solid rgba(0,0,0,0.3);
+            margin-top: 50px;
+        }
+
+        select {
+            height: 40px;
+            width: 285px;
+            font-size: 18px;
+            margin-bottom: -35px;
+            margin-left: 30px;
+            background-color: rgba(128,128,128,0.55);
+            padding-left: 26px;
+            border: 1px solid rgba(0,0,0,0.3);
+            border-style: inherit;
+            border-radius: 5px;
+            border: 1px solid rgba(0,0,0,0.3);
+            margin-top: 50px;
+        }
+
+        .container img {
+            width: 135px;
+            height: 135px;
+            margin-top: -63px;
+            margin-bottom: 0px;
+            border-radius: 5px;
+            
+           
+        }
+
+        .btn-reg {
+            text-align: center;
+            margin-top: 70px;
+            border-radius: 5px;
+            border: 1px solid rgba(0,0,0,0.3);
+            background-color: rgba(0, 140, 125,0.9);
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translate3d(0px,-140px,0px);
+                animation-timing-function: ease-in;
+                opacity: .1;
+            }
+
+            50% {
+                transform: translate3d(0px,23px,0px);
+                animation-timing-function: ease-out;
+            }
+
+            100% {
+                transform: translate3d(0px,0px,0px);
+                animation-timing-function: ease-out;
+            }
+        }
+
+        .myCirle {
+           
+            animation: slide 2s;
+        }
+
+
+        .under_logo{
+          
+           color:mediumaquamarine;
+           font-size:30px;
+           font-family:Calibri;
+            
+        }
+        
+
+
+
+
+    </style>
+</head > 
+
+
+
+<body>
+
+
+    <div class="container">
+        <form action = "register" method = "post">
+            <div class="myCirle">
+                
+                    <img src="logo10.png" />
+                <div class="under_logo">
+                    <p>Spotify.</p>
+                </div>
+            </div>
+            <div class="form-input">
+            <h2>Unsuccessful register.</h2>
+                
+                    <input type="text" name="name" placeholder="Enter name" />
+                    <input type="text" name="username" placeholder="Enter username" /><br />
+                    <input type="password" name="password" placeholder="Enter password" />
+                    <input type="email" name="email" placeholder="Enter e-mail" /><br />
+               
+          
+                <select name="gender">
+                    <option value="-1" selected>Select gender</option>
+                    <option value="male">Male</option>
+                        <option value="female">Female</option>
+                </select>
+              
+                    <select name="city" class="form-input">
+                        <option value="-1" selected class="form-input">Select city</option>
+                        <option value="Sofia">Sofia</option>
+                        <option value="Plovdiv">Plovdiv</option>
+                        <option value="Burgas">Burgas</option>
+                        <option value="Varna">Varna</option>
+                        <option value="stz">Stara Zagora</option>
+                    </select><br />
+                    <input type="date" name="birthday" value="Birthday"/>
+                    <input type="tel" name="mobileNumber" placeholder="Mobile number" /><br />
+               
+                    <input type="submit" name="submit" value="Join!" class="btn-reg" />
+                </div>
+</form>
+    </div>
+</body>
+ </html >
+        

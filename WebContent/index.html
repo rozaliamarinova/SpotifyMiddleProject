@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Background</title>
+
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Calibri, sans-serif;
+            min-width: 700px;
+        }
+
+        .background-wrap {
+            position: fixed;
+            z-index: -1000;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            top: 0;
+            left: 0;
+        }
+
+        #video-bg-elem {
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-height: 100%;
+            min-width: 100%;
+        }
+
+        .content {
+           
+            width: 100%;
+            margin-top:130px;
+
+        }
+
+        .info {
+            text-align: center;
+            background-color: rgba(1, 1, 1, 0.50);
+            font-size: 48px;
+            color: whitesmoke;
+            font-family: Calibri;
+            height: 400px;
+            font-stretch:extra-condensed;
+            letter-spacing:1.0px;
+        }
+
+        .vertical_align{
+            position:relative;
+            top:13%;
+        }
+
+        .vertical_align2 {
+            position: relative;
+            top: 22%;
+            margin-right:530px;
+        }
+
+        @media only screen and (min-width: 40em){
+            .content{
+                height:500px;
+            }
+            .animated_button{
+                height:500px;
+            }
+           
+        }
+
+
+        .btn-proceed {
+            height: 70px;
+            width: 295px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            padding: 15px 25px;
+            color: antiquewhite;
+            font-family: Arial;
+            font-size: x-large;
+            background-color: rgba(60, 80, 123,0.6);
+            padding-left: 30px;
+            border-style: inherit;
+            border: 2px solid rgba(0,0,0,0.3);
+            border-radius: 10px;
+            margin-left: 0px;
+            margin-top:100px;
+        }
+
+
+        .animated_button {
+            height: 75px;
+            width: 295px;
+            text-transform: uppercase;
+            padding: 15px 25px;
+            color: antiquewhite;
+            font-family: Calibri;
+            font-size: 25px;
+            background-color: rgba(60, 80, 123,0.6);
+            padding-left: 30px;
+            border-style: inherit;
+            border: 2px solid rgba(0,0,0,0.3);
+            border-radius: 12px;
+            margin-left: 530px;
+            margin-top: 20px;
+            text-align: center;
+            text-emphasis-position: below;
+            letter-spacing:-0.3px;
+            transition: .10s;
+            -o-transition: .10s;
+            -moz-transition: .5s;
+            -webkit-transition: .5s;
+        }
+
+            .animated_button:hover {
+                text-shadow: 2px 2px 2px #808080;
+                background-color: rgba(9, 29, 53, 0.59);
+                border-radius: 20px;
+            }
+
+    </style>
+</head>
+<body>
+
+
+    <div class="background-wrap">
+        <video id="video-bg-elem" preload="auto" autoplay="autoplay" loop="loop" muted="muted">
+            <source src="video.mp4" type="video/mp4">
+            Video not supported
+        </video>
+    </div>
+
+   
+        <div class="content">
+            <div class="info">
+                <div class="vertical_align">
+                    <h2>Spotify</h2>
+                    <output>Music for each moment.</output>
+                </div>
+                <div class="vertical_align2">
+                    <form action = "/Spotify/loginPagee.html">
+                        <button type="submit" value="Get Started"  class="animated_button">GET STARTED</button>
+                    </form>
+            </div>
+            </div>
+        </div>
+ 
+</body>
+</html>

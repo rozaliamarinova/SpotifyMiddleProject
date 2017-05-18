@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url(beyonce.jpg);
+            background-size:100%;
+            margin: 0 auto;
+        }
+
+        .container {
+            width: 100%;
+            height: 500px;
+            text-align: center;
+            background-color: rgba(1, 1, 1, 0.80);
+            margin: 0 auto;
+            margin-top: 130px;
+      
+        }
+
+            .container img {
+                width: 135px;
+                height: 135px;
+                margin-top: -63px;
+                margin-bottom: 0px;
+                border-radius: 5px;
+            }
+
+            @keyframes slide{
+                0% {
+                    transform: translate3d(0px,-140px,0px);
+                    animation-timing-function:ease-in;
+                    opacity: .1;
+                }
+                50%{
+                    transform: translate3d(0px,23px,0px);
+                    animation-timing-function:ease-out;
+                }
+                100% {
+                    transform: translate3d(0px,0px,0px);
+                    animation-timing-function: ease-out;
+                }
+                
+            }
+
+            .myCirle {
+                animation: slide 2s;
+            }
+
+
+        input {
+            height: 40px;
+            width: 300px;
+            font-size: 18px;
+            margin-bottom: -20px;
+            background-color: rgba(128,128,128,0.55);
+            padding-left: 30px;
+            border-style: inherit;
+            border-radius: 5px;
+            border: 1px solid rgba(0,0,0,0.3);
+            margin-top: 30px;
+        }
+        
+         .btn-login {
+            height: 40px;
+            width: 330px;
+            margin-bottom: -43px;
+            padding: 15px 25px;
+            color: antiquewhite;
+            background-color: rgba(0, 140, 145,0.9);
+            padding-left: 0px;
+            border-radius: 5px;
+        }
+
+        .btn-reg {
+            height: 40px;
+            width: 330px;
+            padding: 15px 25px;
+            color: antiquewhite;
+            background-color: rgba(0, 140, 145,0.9);
+            padding-left: 30px;
+            border-radius: 5px;
+            margin-top: 24px;
+        }
+
+        .btn-loginFB {
+            height: 40px;
+            width: 330px;
+            margin-bottom: 17px;
+            background-image: url(fb.jpg);
+            background-repeat: no-repeat;
+            
+            padding: 15px 25px;
+            color: antiquewhite;
+            background-color: rgba(0, 140, 145,0.9);
+            padding-left: 30px;
+            border-radius: 5px;
+        }
+
+
+        a
+         {
+            color: whitesmoke;
+            text-decoration-style: none;
+            font-family: sans-serif;
+            font-size: small; 
+           
+        }
+        
+        h2{
+        	color : whitesmoke;
+        	font-family: Calibri;
+        	margin-top:30px;
+        	margin-bottom:-1px;
+        }
+
+        .under_logo {
+            color: aquamarine;
+            font-size: 30px;
+            font-family: Calibri;
+            margin-bottom:-13px;
+        }
+
+
+     
+        </style>
+
+        </head > 
+        <body >
+         <div class="container" > 
+       
+            <div class="myCirle">
+
+                <img src="logo10.png" />
+                <div class="under_logo">
+                    <p>Spotify.</p>
+                </div>
+            </div>
+            <form action="login" method="post"> 
+            
+        <div class="form-input" > 
+        <h2>Wrong credentials, try again.</h2>
+            <input type="text" name="username" placeholder = "Enter username" required="required"/>
+             </div >
+            <div class="form-input" > 
+                <input type="password" name="password" placeholder="Enter password" required="required" /> 
+            </div >
+            <div class="form-input">
+                <input type="submit" name="submit" value="Sign In" class="btn-login" /><br />
+                <input type="submit" name="submit" value="Sign In With Facebook" class="btn-loginFB" />
+                </div>
+		</form > 
+             <div class="form-input">
+                 <a href="/Spotify/forgotPasswordPage.html"> Forgot password?</a>
+                 </div>
+                 <div class="form-input">
+                     <form action = "/Spotify/registrationPage.html">
+                         <input type="submit" name="submit" value="Not a spotfyier yet?" class="btn-reg" />
+                     </form>
+                 </div>
+             </div> 
+           <script>
+                $(document).ready(function () {
+                    var $navigacia = $('body'),
+                            val = $navigacia.css('left') === '250px' ? '0px' : '250px';
+                    $navigacia.animate({
+                        left: val
+                    }, 300)
+
+                });
+
+            </script> 
+    </body > 
+</html >
+        
